@@ -33,6 +33,6 @@ if __name__ == '__main__':
     suite = unittest.TestSuite()
     suite.addTest(Login("test_01"))
     now = time.strftime("%Y-%m-%d_%H_%M_%S", time.localtime(time.time()))
-    fp = open(r'C:\Users\annieren\PycharmProjects\test\report\result' + now + '.html', 'wb')
+    fp = open(r'C:\Users\annieren\PycharmProjects\test\report\result\result.html', 'wb')
     runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title='测试报告', description=u'用例执行情况:')
     runner.run(suite)
