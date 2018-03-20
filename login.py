@@ -18,7 +18,7 @@ class Login(unittest.TestCase):
         self.driver.close()
     def test_01(self):
         self.driver.find_element_by_id("userName").send_keys("annieren@haizol.com")
-        self.driver.find_element_by_id("password").send_keys("Asdf12345")
+        self.driver.find_element_by_id("password").send_keys("123456")
         self.driver.find_element_by_css_selector("button[type='submit']").click()
         time.sleep(3)
         current_url = self.driver.current_url
